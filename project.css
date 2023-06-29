@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(2, 2, 33);
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(3, 3, 71);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+nav ul li{
+    list-style: none;
+    margin: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+nav ul li a:hover{
+    color: turquoise;
+    font-size: 1.15rem;
+}
+.left{
+    font-size: 2.5rem;
+    margin-left: 27px;
+}
+.color{
+    color: rgb(55, 223, 223);
+}
+
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 80px;
+}
+.title .big-text{
+    position: absolute;
+    /* top: 50%; */
+    left: 42.5%;
+    top: 19%;
+    color: rgb(28, 28, 54);
+    z-index: -1;
+    font-size: 5.1rem;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title .p{
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-gap: 15rem;
+    grid-row-gap: 9rem;
+    margin-left: 215px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.project .project-item{
+    position: relative;
+    
+}
+
+    .image img{
+        width: 500px;
+        height: 350px;
+        opacity: 1;
+        backface-visibility: hidden;
+    border: 3px solid turquoise;
+    border-radius: 15px;
+    padding: 7px;
+
+}
+
+.hover-items{
+    position: absolute; 
+    margin-left: 270px;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.project-item:hover .image {
+    opacity: 0.2;
+  }
+  
+  .project-item:hover .hover-items {
+    opacity: 1;
+  }
+  .hover-items h3{
+    color: turquoise;
+    font-size: 20px;
+  }
+  .icons .icon{
+    color: white;
+    background-color:rgb(2, 2, 33);
+    padding: 3%;
+    font-size: 2rem;
+    margin-left: 50px;
+    border-radius: 45%;
+  }
+  .icon i{
+    margin-top: 20px;
+    padding: 5px;
+    padding-top: 2px;
+  } 
+  .discription {
+    margin-top: 15px;
+    margin-left: 35px;
+    font-size: 1.2rem;
+    color: rgb(156, 156, 156);
+  }
+  .discription span{
+    margin-left: 20px;
+  }
+  .icon:hover{
+    color: red;
+  }
